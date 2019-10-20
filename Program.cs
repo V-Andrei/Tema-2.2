@@ -17,8 +17,36 @@ namespace Tema_2._2
             //Ex5();
             //Ex6();
             //Ex7();
+            //Ex8();
 
 
+        }
+
+        private static void Ex8()
+        {
+            int[] arr1 = new int[] { 0, 2, 4, 5, 6, 8 };
+            int[] arr2 = new int[6];
+
+            int i, n;
+
+            n = arr1.Length;
+
+            for (i = 0; i < n; i++)
+            {
+                arr2[i] = arr1[i];
+            }
+
+            Console.Write("\nThe elements stored in the first array are :\n");
+            for (i = 0; i < n; i++)
+            {
+                Console.Write("{0}  ", arr1[i]);
+            }
+
+            Console.Write("\n\nThe elements copied into the second array are :\n");
+            for (i = 0; i < n; i++)
+            {
+                Console.Write("{0}  ", arr2[i]);
+            }
 
             Console.ReadLine();
         }
