@@ -20,6 +20,34 @@ namespace Tema_2._2
             //Ex8();
 
 
+            ExUniqueString();
+        }
+
+        private static void ExUniqueString()
+        {
+            string inputStr = "Drive";
+            Console.WriteLine("The string input its  " + isUnique(inputStr) + " unique.");
+
+            Console.ReadLine();
+        }
+
+        private static bool isUnique(String input)
+        {
+            for (int i = 0; i < input.Length; i++)
+            {
+                char charatersPutString = input[i];
+                int count = 0;
+                for (int j = 0; j < input.Length; j++)
+                {
+                    if (charatersPutString == input[j])
+                    {
+                        count++;
+                    }
+                    if (count > 1)
+                    return false;
+                }               
+            }
+            return true;
         }
 
         private static void Ex8()
