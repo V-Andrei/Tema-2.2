@@ -172,7 +172,6 @@ namespace Tema_2._2
             Console.Write("Enter new item : ");
             item = int.Parse(Console.ReadLine());
 
-            //Perform shift opearation
             for (i = 5; i >= pos; i--)
             {
                 arr[i] = arr[i - 1];
@@ -180,7 +179,6 @@ namespace Tema_2._2
 
             arr[pos - 1] = item;
 
-            //print array after insertion
             Console.WriteLine("Array elements after insertion : ");
             for (i = 0; i < 6; i++)
             {
