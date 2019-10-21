@@ -22,6 +22,22 @@ namespace Tema_2._2
             //ExPalindrome();
             //ExUniqueString();
 
+            string[] array = {"Andrei are mere si nu se sperie"};
+            string empty = "";
+
+            int count = 0;
+
+            for (int i = 0; i < array.Length; i--)
+            {
+                if("")
+                {
+                
+                }
+            }
+
+            Console.WriteLine(count);
+
+
 
             Console.ReadLine();
         }
