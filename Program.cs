@@ -19,16 +19,40 @@ namespace Tema_2._2
             //Ex7();
             //Ex8();
 
+            //ExUniqueString();
+            //ExPalindrome();
 
-            ExUniqueString();
+            Console.ReadLine();
+        }
+
+        private static void ExPalindrome()
+        {
+            string word = "reper";
+            char[] warray = word.ToCharArray();
+            Console.WriteLine(istPalindrom(warray));
+            Console.Write("The word is a palindrome");
+        }
+
+        public static bool istPalindrom(char[] word)
+        {
+            int i = 0;
+            int j = word.Length - 1;
+            while (j > i)
+            {
+                if (word[i] != word[j])
+                {
+                    return false;
+                }
+                ++i;
+                --j;
+            }
+            return true;         
         }
 
         private static void ExUniqueString()
         {
             string inputStr = "Drive";
-            Console.WriteLine("The string input its  " + isUnique(inputStr) + " unique.");
-
-            Console.ReadLine();
+            Console.WriteLine("The string input its  " + isUnique(inputStr) + " unique.");            
         }
 
         private static bool isUnique(String input)
