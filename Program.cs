@@ -19,8 +19,9 @@ namespace Tema_2._2
             //Ex7();
             //Ex8();
 
-            //ExUniqueString();
             //ExPalindrome();
+            //ExUniqueString();
+
 
             Console.ReadLine();
         }
