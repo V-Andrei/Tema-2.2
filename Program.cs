@@ -19,27 +19,43 @@ namespace Tema_2._2
             //Ex7();
             //Ex8();
 
-            //ExPalindrome();
             //ExUniqueString();
 
-            string[] array = {"Andrei are mere si nu se sperie"};
-            string empty = "";
+            //ExPalindrome();
+            //ExBonus();
+
+            Console.ReadLine();
+        }
+
+        private static void ExBonus()
+        {
+            Console.WriteLine("Write a sentence:");
+            string text = Console.ReadLine();
+            string empty = " ";
+            char characterEmpty = char.Parse(empty);
+
+            string dot = ".";
+            char characterDot = char.Parse(dot);
 
             int count = 0;
 
-            for (int i = 0; i < array.Length; i--)
+            for (int i = text.Length - 1; i >= 0; i--)
             {
-                if("")
+
+                count++;
+                if (text[i] == characterDot)
                 {
-                
+                    count--;
                 }
+                if (text[i] == characterEmpty)
+                {
+                    break;
+                }
+
             }
 
-            Console.WriteLine(count);
 
-
-
-            Console.ReadLine();
+            Console.WriteLine("The last word have " + (count - 1) + " characters");
         }
 
         private static void ExPalindrome()
