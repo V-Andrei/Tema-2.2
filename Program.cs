@@ -20,13 +20,13 @@ namespace Tema_2._2
             //Ex8();
 
             //ExUniqueString();
-
+            //
             //ExPalindrome();
             //ExBonus();
 
             Console.ReadLine();
         }
-
+       
         private static void ExBonus()
         {
             Console.WriteLine("Write a sentence:");
@@ -112,7 +112,8 @@ namespace Tema_2._2
             int[] arr1 = new int[] { 0, 2, 4, 5, 6, 8 };
             int[] arr2 = new int[6];
 
-            int i, n;
+            int i; 
+            int n;
 
             n = arr1.Length;
 
@@ -121,16 +122,16 @@ namespace Tema_2._2
                 arr2[i] = arr1[i];
             }
 
-            Console.Write("\nThe elements stored in the first array are :\n");
+            Console.WriteLine("The elements stored in the first array are :");
             for (i = 0; i < n; i++)
             {
-                Console.Write("{0}  ", arr1[i]);
+                Console.WriteLine(arr1[i]);
             }
 
-            Console.Write("\n\nThe elements copied into the second array are :\n");
+            Console.WriteLine("The elements copied into the second array are :");
             for (i = 0; i < n; i++)
             {
-                Console.Write("{0}  ", arr2[i]);
+                Console.WriteLine(arr2[i]);
             }
 
             Console.ReadLine();
@@ -169,8 +170,9 @@ namespace Tema_2._2
             int[] arr = new int[] { 50, 1005, 100, 43, 87, 2, 53 };
             int i, max, min, n;
 
+            Console.WriteLine("The array is: ");
             Array.ForEach(arr, Console.WriteLine);
-            Console.Write("The array is: ");
+            
 
             n = arr.Length;
             max = arr[0];
@@ -186,8 +188,8 @@ namespace Tema_2._2
                     min = arr[i];
                 }
             }
-            Console.Write("Maximum element = {0}\n", max);
-            Console.Write("Minimum element = {0}\n\n", min);
+            Console.WriteLine("Maximum element = " + max);
+            Console.WriteLine("Minimum element = " + min);
         }
 
         private static void Ex5()
@@ -215,7 +217,7 @@ namespace Tema_2._2
             Console.WriteLine("Array elements after insertion : ");
             for (i = 0; i < 6; i++)
             {
-                Console.WriteLine("Element[" + (i + 1) + "]: " + arr[i]);
+                Console.WriteLine("Element: " + (i + 1) + " Position: " + arr[i]);
             }
 
             Console.WriteLine();
